@@ -95,6 +95,44 @@ p {}
     }
 }
 
+@media only screen and (max-width: 600px) {
+    
+.eventimagealt {
+    max-width: 100%;
+    text-align: center;
+}
+    .eventimage {
+    display:none;
+    }
+    .eventheader {
+        text-align:center; 
+    }
+    .box {
+	padding: 2em; 
+	margin: .25em;}
+    
+    .row {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .eventimagealt {
+        display:none;
+    }
+    .eventimage {
+    display:block;
+    max-width: 50%;
+    float: left;
+    }
+    .event {
+    display: block;
+    margin-left: 55%;
+    
+}
+}
+
 button {
     display: block;
     border: 2px solid #838695;
