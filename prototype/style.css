@@ -26,7 +26,11 @@ font-family: 'Actor', sans-serif;
 }
 
 .social {
-float: right;
+    text-align: center;
+}
+
+.social img {
+    max-width: 10%;
 }
 
 .donate {
@@ -36,27 +40,91 @@ float: right;
 nav {
     background-color: #f2f2f2;
     padding: 2px;
+    max-width: 100%;
+}
+
+
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav a {
-    justify-content: space-evenly;
     font-family: 'Actor', sans-serif;
-    color: #23965f;
+    color: #155B3F;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.5em;
 }
 
-@media only screen and (max-width: 600px) {
-    nav a {
-        float: left;
-        max-width: 50%;
+@media only screen and (min-width: 800px) {
+    .social {
+        float: right;
+        max-width: 25%;
+        clear: both;
     }
+    nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    
 }
 
 
 body {
   padding: 1em;
   font-family: 'Montserrat', 'Actor', sans-serif;
+}
+
+.pets img {
+    max-width: 50%;
+}
+
+.box {
+		width: 50%;
+    height: auto;
+		margin: 0;
+	}
+
+.row {
+display: flex;
+justify-content: space-evenly;
+}
+
+.catbox {
+    width: 33%;
+    height: 25em;
+    background-image: url(images/cat.jpg);
+    background-size:cover;
+}
+
+.dogbox {
+    width: 33%;
+    background-image: url(images/kelly.jpg);
+    background-size: cover;
+}
+
+.otherbox {
+    width: 33%;
+    background-image: url(images/horse.jpg);
+    background-size: cover;
+}
+
+.inner-box {
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    margin-top: 12em;
+}
+
+.inner-text {
+    text-align: center;
+    margin-left: 3em;
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
 }
 
 main {
@@ -73,15 +141,11 @@ h2 {
     color: #23965f;
 }
 
-h3 {}
-
-h4 {}
-
-h5 {}
-
-h6 {}
-
-p {}
+.slider {
+    max-width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
 
 .pet {
     max-width: 100%;
