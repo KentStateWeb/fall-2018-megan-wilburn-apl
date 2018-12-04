@@ -4,14 +4,16 @@ font-family: 'Actor', sans-serif;
 }
 
 .header {
-    display: block;
-    clear: both;
+    display: flex;
+    align-items: flex-end;
 }
 
 .header h1 {
     text-align: left;
     font-size: 4em;
     font-weight: lighter;
+    margin: 0;
+    padding: 0;
 }
 
 .donate {
@@ -26,7 +28,7 @@ font-family: 'Actor', sans-serif;
 }
 
 .social {
-    text-align: center;
+    margin-left: auto;
 }
 
 .social img {
@@ -61,9 +63,8 @@ nav a {
 
 @media only screen and (min-width: 800px) {
     .social {
-        float: right;
+        margin-left: auto;
         max-width: 25%;
-        clear: both;
     }
     nav ul {
     display: flex;
@@ -120,11 +121,35 @@ justify-content: space-evenly;
 }
 
 .inner-text {
-    text-align: center;
-    margin-left: 3em;
     font-size: 3em;
     text-decoration: none;
     color: white;
+    display: block;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+.row {
+display: flex;
+flex-direction: column;
+}
+    .catbox {
+    width: 100%;
+    background-image: url(images/cat.jpg);
+    background-size:cover;
+}
+
+.dogbox {
+    width: 100%;
+    background-image: url(images/kelly.jpg);
+    background-size: cover;
+}
+
+.otherbox {
+    width: 100%;
+    background-image: url(images/horse.jpg);
+    background-size: cover;
+}
 }
 
 main {
@@ -142,7 +167,8 @@ h2 {
 }
 
 .slider {
-    max-width: 75%;
+    max-width: 100%;
+    height: auto;
     text-align: center;
     margin: 0 auto;
 }
@@ -157,7 +183,10 @@ h2 {
         float: left;
         max-width: 50%;
     }
+    
 }
+
+/* Event */
 
 @media only screen and (max-width: 600px) {
     
@@ -174,8 +203,8 @@ h2 {
     .box {
 	padding: 2em; 
 	margin: .25em;}
-    
-    .row {
+
+    .eventrow {
         display: flex;
         justify-content: space-evenly;
     }
@@ -187,7 +216,7 @@ h2 {
     }
     .eventimage {
     display:block;
-    max-width: 50%;
+    max-width: 40%;
     float: left;
     }
     .event {
@@ -237,8 +266,10 @@ footer {
 
 }
 
-.hours {
-    
+.hours ul{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5em;
 }
 
 
