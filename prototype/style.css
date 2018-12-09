@@ -16,8 +16,15 @@ font-family: 'Actor', sans-serif;
     text-align: left;
     font-size: 4em;
     font-weight: lighter;
+    color: #005fa9;
     margin: 0;
     padding: 0;
+}
+
+@media only screen and (max-width: 660px) {
+    .header h1 {
+        font-size: 3em;
+    }
 }
 
 .donate {
@@ -43,9 +50,6 @@ font-family: 'Actor', sans-serif;
     .social img {
         max-width: 10%;
     }
-}
-
-.donate {
 }
 
 nav {
@@ -77,7 +81,17 @@ nav a {
         max-width: 35%;
     }
     .socialfooter {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+    }
+    
+    .socialfooter img {
+        width: 50px;
+    }
+    
+    .donation, .icons {
+        margin-left: 10px;
     }
     nav ul {
     display: flex;
@@ -88,19 +102,26 @@ nav a {
 }
 
 @media only screen and (max-width: 849px) {
+    
     .social {
         display: none;
     }
     .socialfooter {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
     }
-
+    
     .socialfooter img {
-    max-width: 5%;
+        width: 50px;
     }
-
-    .socialfooter a {
-        margin-right: auto;
+    
+    .donation, .icons {
+        margin-left: 10px;
+    }
+    
+    .footerlogo {
+        display: none;
     }
 }
 
@@ -244,7 +265,7 @@ h2 {
 
 .slider {
     max-width: 100%;
-    height: auto;
+    max-height: 80%;
     text-align: center;
     margin: 0 auto;
     display:block;
@@ -359,7 +380,8 @@ ul {
 footer {
     display: block;
     clear: both;
-    background-color: #f2f2f2;
+    background-color: #717171;
+    margin-bottom: 0;
 
 }
 
@@ -367,16 +389,31 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding: 1em 1em 0 1em;
+    margin-bottom: 0;
 }
 
-.contact {
-
+.footer h2 {
+    color: #fff;
 }
 
-.hours ul{
+.contact a{
+    padding-left: auto;
+    text-decoration: none;
+    font-size: 2em;
+    color: #fff;
+}
+
+@media only screen and (max-width: 555px) {
+    .contact a {
+        font-size: 1.5em;
+    }
+}
+
+.hours ul, .contact ul{
     display: flex;
     flex-direction: column;
-    padding-right: 5em;
+    padding-right: 1em;
 }
 
 /* Slideshow container */
@@ -619,6 +656,12 @@ footer {
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
 }
 
-div, section, main, aside, header, footer {
+div, section, main, aside, header{
   margin-bottom: .5em;
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    padding-bottom: 1em;
 }
