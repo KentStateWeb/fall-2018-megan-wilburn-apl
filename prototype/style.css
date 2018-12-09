@@ -159,6 +159,14 @@ flex-direction: column;
     
 }
 
+@media only screen and (max-width:600px) {
+    .petrow {
+        display: block;
+        text-align: center;
+        padding: 1em 5em;
+    }
+}
+
 .crop {
     height: 400px;
     width: 400px;
@@ -170,6 +178,7 @@ flex-direction: column;
     height: auto;
     width: auto;
     max-width: 100%;
+    object-fit: contain;
 }
 
 .animaltext {
@@ -225,7 +234,38 @@ h2 {
         float: left;
         max-width: 50%;
     }
+}
+
+@media only screen and (max-width: 1200px) {
+    .crop {
+    max-height: 250px;
+    max-width: 250px;
+    overflow: hidden;
+    padding: 2px;
+    }
     
+    .crop img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    object-fit: scale-down;
+}
+}
+
+@media only screen and (max-width:700px) {
+        .crop {
+    max-height: 200px;
+    max-width: 200px;
+    overflow: hidden;
+    padding: 2px;
+    }
+    
+    .crop img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    object-fit: scale-down;
+}
 }
 
 /* Event */
