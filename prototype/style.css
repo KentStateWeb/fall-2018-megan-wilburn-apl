@@ -36,11 +36,16 @@ font-family: 'Actor', sans-serif;
 }
 
 .social img {
-    max-width: 10%;
+    max-width: 14%;
+}
+
+@media only screen and (min-width:1000px) {
+    .social img {
+        max-width: 10%;
+    }
 }
 
 .donate {
-    ;
 }
 
 nav {
@@ -65,10 +70,14 @@ nav a {
     font-size: 1em;
 }
 
-@media only screen and (min-width: 800px) {
+
+@media only screen and (min-width: 850px) {
     .social {
         margin-left: auto;
-        max-width: 25%;
+        max-width: 35%;
+    }
+    .socialfooter {
+        display: none;
     }
     nav ul {
     display: flex;
@@ -76,6 +85,23 @@ nav a {
     justify-content: space-around;
     }
     
+}
+
+@media only screen and (max-width: 849px) {
+    .social {
+        display: none;
+    }
+    .socialfooter {
+        display: block;
+    }
+
+    .socialfooter img {
+    max-width: 5%;
+    }
+    
+    .socialfooter a {
+        margin-right: auto;
+    }
 }
 
 
@@ -309,7 +335,6 @@ h2 {
 }
 
 button {
-    display: block;
     border: 2px solid #838695;
     border-radius: 25px;
     background-color: #f2f2f2;
@@ -505,6 +530,30 @@ footer {
 }
 }
 
+/* Homepage Event */
+
+.homeevent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.homeeventbox {
+    background-color: aqua;
+}
+
+.homeeventbox h1 {
+    text-align: center;
+}
+
+.homeeventbox p {
+    text-align: left;
+}
+
+.homeevent img {
+    border: 10px solid black;
+    max-width: 100%;
+}
+
 .hr{ 
     display:block;
     border:none;
@@ -515,5 +564,5 @@ footer {
 }
 
 div, section, main, aside, header, footer {
-  margin-bottom: 1em;
+  margin-bottom: .5em;
 }
