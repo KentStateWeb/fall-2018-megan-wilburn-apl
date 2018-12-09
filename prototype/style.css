@@ -22,7 +22,7 @@ font-family: 'Actor', sans-serif;
 
 .donate {
     flex: 0 0 100%;
-    
+
 }
 
 .logo {
@@ -84,7 +84,7 @@ nav a {
     flex-direction: row;
     justify-content: space-around;
     }
-    
+
 }
 
 @media only screen and (max-width: 849px) {
@@ -98,7 +98,7 @@ nav a {
     .socialfooter img {
     max-width: 5%;
     }
-    
+
     .socialfooter a {
         margin-right: auto;
     }
@@ -182,7 +182,7 @@ flex-direction: column;
 .petrow {
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 @media only screen and (max-width:600px) {
@@ -220,7 +220,7 @@ flex-direction: column;
 
 .animaltext img{
    max-width: 100%;
-    
+
 }
 
 main {
@@ -252,7 +252,7 @@ h2 {
 
 .pet {
     max-width: 100%;
-    
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -269,7 +269,7 @@ h2 {
     overflow: hidden;
     padding: 2px;
     }
-    
+
     .crop img {
     height: auto;
     width: auto;
@@ -285,7 +285,7 @@ h2 {
     overflow: hidden;
     padding: 2px;
     }
-    
+
     .crop img {
     height: auto;
     width: auto;
@@ -297,7 +297,7 @@ h2 {
 /* Event */
 
 @media only screen and (max-width: 600px) {
-    
+
 .eventimagealt {
     max-width: 100%;
     text-align: center;
@@ -306,10 +306,10 @@ h2 {
     display:none;
     }
     .eventheader {
-        text-align:center; 
+        text-align:center;
     }
     .box {
-	padding: 2em; 
+	padding: 2em;
 	margin: .25em;}
 
     .eventrow {
@@ -330,7 +330,7 @@ h2 {
     .event {
     display: block;
     margin-left: 55%;
-    
+
 }
 }
 
@@ -347,7 +347,7 @@ button {
     text-align: center;
     letter-spacing: .2em;
     word-wrap: normal;
-    
+
 }
 
 ul {
@@ -360,7 +360,7 @@ footer {
     display: block;
     clear: both;
     background-color: #f2f2f2;
-    
+
 }
 
 .footer {
@@ -463,12 +463,12 @@ footer {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -512,49 +512,105 @@ footer {
         .inner-box {
         max-width: 100%;
     }
-    
+
 }
-}
+
 @media only screen and (min-width: 700px) {
-    .mission {
-        width: 60%;
-    }
-    
-}
-}
-@media only screen and (min-width: 1200px) {
     .mission {
         width: 100%;
     }
-    
-}
+
 }
 
-/* Homepage Event */
+@media only screen and (min-width: 800px) {
+    .mission {
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .mission {
+        width: 60%;
+    }
+
+}
+
+/* Homepage Event & Involvement*/
 
 .homeevent {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
 }
 
-.homeeventbox {
-    background-color: aqua;
+.imgcontainer {
+    max-width: 50%;
+    align-self: center;
 }
 
-.homeeventbox h1 {
+.homeevent img { 
+    border: 10px solid black;
+    max-height: 300px;
+}
+
+ .homeeventbox {
+     max-width: 50%;
+     color: white;
+     align-items: center;
+}
+
+.homeeventbox a {
+    text-decoration: none;
+    color: #717171;
+    font-size: 5em;
     text-align: center;
 }
 
-.homeeventbox p {
-    text-align: left;
+@media only screen and (max-width: 1000px) {
+    .homeevent {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 1em 4.5em;
+        padding: 0;
+    }
+    
+    .imgcontainer {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .homeevent img {
+        max-width: 100%;
+    }
+    
+    .involve {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    
+        .homeeventbox {
+        max-width: 100%;
+    }
 }
 
-.homeevent img {
-    border: 10px solid black;
-    max-width: 100%;
+@media only screen and (mix-width: 650px, max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+        padding: 5em;
+    }
 }
 
-.hr{ 
+@media only screen and (max-width: 600px) {
+    .homeeventbox a{
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+.hr{
     display:block;
     border:none;
     color:white;
