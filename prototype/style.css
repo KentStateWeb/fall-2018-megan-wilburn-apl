@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 header {
 font-family: 'Montserrat', sans-serif;
 font-family: 'Actor', sans-serif;
@@ -36,11 +40,11 @@ font-family: 'Actor', sans-serif;
 }
 
 .donate {
-    float: right;
+    ;
 }
 
 nav {
-    background-color: #f2f2f2;
+    background-color: #717171;
     padding: 2px;
     max-width: 100%;
 }
@@ -55,10 +59,10 @@ nav ul {
 
 nav a {
     font-family: 'Actor', sans-serif;
-    color: #155B3F;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -69,7 +73,7 @@ nav a {
     nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     }
     
 }
@@ -114,20 +118,6 @@ justify-content: space-evenly;
     background-size: cover;
 }
 
-.inner-box {
-    background-color: rgba(0,0,0,.8);
-    color: white;
-    margin-top: 12em;
-}
-
-.inner-text {
-    font-size: 3em;
-    text-decoration: none;
-    color: white;
-    display: block;
-    text-align: center;
-}
-
 @media only screen and (max-width: 600px) {
 .row {
 display: flex;
@@ -152,14 +142,65 @@ flex-direction: column;
 }
 }
 
+/* testing */
+
+.petbox {
+    width: 100%;
+    margin: 0;
+}
+
+.petrow img {
+    max-width: 50%;
+}
+
+.petrow {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.crop {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.crop img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}
+
+.animaltext {
+    text-align: center;
+
+}
+
+.animaltext a{
+    text-decoration: none;
+    color: #717171;
+    font-size: 2em;
+}
+
+.animaltext img{
+   max-width: 100%;
+    
+}
+
 main {
     color: dark-gray;
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+.apl {
     color: #005fa9;
+}
+
+h1 {
+    color: #717171;
     font-family: 'Actor', sans-serif;
+    text-align: center;
 }
 
 h2 {
@@ -171,6 +212,7 @@ h2 {
     height: auto;
     text-align: center;
     margin: 0 auto;
+    display:block;
 }
 
 .pet {
@@ -272,8 +314,166 @@ footer {
     padding-right: 5em;
 }
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.mission {
+    background-image: url(images/mission.jpg);
+    background-size:cover;
+    margin: 1em auto;
+    padding: 10em auto;
+}
+
+.mission h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-top: 0;
+}
+
+.statement {
+    margin: 0em 5em 5em 5em;
+    font-style: oblique;
+}
+
+.inner-box {
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    position: relative;
+    padding: 2px;
+    max-height: 80%;
+    max-width: 50%;
+}
+
+.inner-text {
+    font-size: 3em;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+
+        .inner-box {
+        max-width: 100%;
+    }
+    
+}
+}
+@media only screen and (min-width: 700px) {
+    .mission {
+        width: 60%;
+    }
+    
+}
+}
+@media only screen and (min-width: 1200px) {
+    .mission {
+        width: 100%;
+    }
+    
+}
+}
+
+.hr{ 
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
 
 div, section, main, aside, header, footer {
-  padding: .5em;
   margin-bottom: 1em;
 }
