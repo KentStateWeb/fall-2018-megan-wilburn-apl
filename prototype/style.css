@@ -64,6 +64,8 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+        justify-content: space-around;
+    font-size: 1.5em;
 }
 
 nav a {
@@ -96,7 +98,6 @@ nav a {
     nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     }
 
 }
