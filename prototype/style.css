@@ -220,6 +220,8 @@ flex-direction: column;
 .petrow {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 75%;
 
 }
 
