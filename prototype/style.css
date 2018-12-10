@@ -7,6 +7,10 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Actor', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     display: flex;
     align-items: flex-end;
@@ -340,6 +344,7 @@ h2 {
 
     .eventrow {
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
     }
 }
@@ -352,6 +357,7 @@ h2 {
     display:block;
     max-width: 40%;
     float: left;
+        padding-right: 20px;
     }
     .event {
     display: block;
@@ -722,4 +728,92 @@ div, section, main, aside, header{
     text-align: center;
     color: white;
     padding-bottom: 1em;
+}
+
+/* Pattern Library */
+
+.patterns {
+    margin: 1em 5em;
+    padding: .5em 5em;
+}
+
+.patterns h2 {
+    text-align: left;
+}
+
+.color {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.colors {
+    height: 100px;
+    width: 100px;
+    margin: 1em;
+}
+
+.colorsmall {
+    height: 80px;
+    width: 80px;
+    margin: 1em;
+}
+
+.color1 {
+    background-color: #005fa9;
+}
+
+.color2 {
+    background-color: #23965f;
+}
+
+.color3 {
+    background-color: #717171;
+}
+
+.color4 {
+    background-color: #003055;
+}
+
+.color5 {
+    background-color: #17633f;
+}
+
+.headercontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.headers {
+    margin: .5em;
+}
+
+.headers h1 {
+    margin: 0;
+}
+
+.types {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.actor {
+    font-family: 'Actor', sans-serif;
+    margin: 1em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.montserrat {
+    font-family: 'Montserrat';
+    margin: 1em;
+}
+
+.buttons {
+    margin: 1em;
 }
