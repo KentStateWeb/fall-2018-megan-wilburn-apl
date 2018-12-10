@@ -587,8 +587,9 @@ footer {
 .mission {
     background-image: url(images/mission.jpg);
     background-size:cover;
-    margin: 1em auto;
+    margin: 0 auto;
     padding: 10em auto;
+    background-position: center;
 }
 
 .mission h1 {
@@ -628,25 +629,30 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
+
+        .inner-box {
+        max-width: 50%;
+        margin-left: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
     .mission {
         width: 100%;
     }
 
 }
 
-@media only screen and (min-width: 800px) {
+
+
+@media only screen and (min-width: 1000px) {
     .mission {
         width: 80%;
     }
 
 }
 
-@media only screen and (min-width: 1000px) {
-    .mission {
-        width: 60%;
-    }
-
-}
 
 /* Homepage Event & Involvement*/
 
