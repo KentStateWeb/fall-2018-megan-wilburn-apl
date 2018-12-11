@@ -461,7 +461,7 @@ footer {
     margin-bottom: 0;
 }
 
-.footer h2 {
+.footer h2, .footer ul {
     color: #fff;
 }
 
