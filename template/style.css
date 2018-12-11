@@ -827,3 +827,8 @@ div, section, main, aside, header{
 .buttons {
     margin: 1em;
 }
+
+.sig {
+    font-style: oblique;
+    font-weight: bold;
+}
